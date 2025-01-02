@@ -1,0 +1,80 @@
+.Container {
+  background: #eee;
+  height: 100vh;
+}
+
+.ContainerDark {
+  background: #272626;
+  height: 100vh;
+}
+
+.Homecontainer {
+  position: relative;
+}
+
+.Homecontainer img {
+  width: 100%;
+  min-height: 250px;
+}
+
+.Homecontent {
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2rem;
+  font-weight: bold;
+  background: none;
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+}
+
+.Homecontent span svg {
+  cursor: pointer;
+}
+
+.Homecontent p,
+.Homecontent span,
+.Homecontent span svg {
+  background: none;
+  color: white;
+  font-weight: 900;
+}
+
+.Inputcontainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.mobile {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .Homecontent {
+    width: 70%;
+  }
+  .Inputcontainer{
+    width: 70%;
+  }
+  .desktop {
+    display: none;
+  }
+  .mobile {
+    display: block;
+    height: 250px;
+  }
+}
+
+@media (max-width: 560px) {
+    .Homecontent {
+      width: 85%;
+    }
+    .Inputcontainer{
+      width: 85%;
+    }
+  }

@@ -1,0 +1,95 @@
+.TodosContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  margin: 0 auto;
+}
+
+ul {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.todosDark {
+  border-radius: 6px;
+  color: #f1f1f1;
+  background: #333;
+}
+
+li {
+  list-style: none;
+  padding: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.editField {
+  background: none;
+  width: 100%;
+  font-size: 1rem;
+  outline: 1px solid black;
+}
+
+input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+li p {
+  width: 80%;
+  text-align: left;
+} 
+
+li div {
+  display: flex;
+}
+
+li input {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+}
+
+li button {
+  border: none;
+  background: none;
+  width: fit-content;
+}
+
+.edit {
+  margin: 0 10px;
+  cursor: pointer;
+  color: orange;
+}
+
+.delete {
+  cursor: pointer;
+  color: red;
+}
+
+.noTodos {
+  font-size: 1.5rem;
+  color: red;
+  margin: 20px 0;
+  text-align: center;
+  line-height: 2.5rem;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+    .TodosContainer {
+        width: 70%;
+    }
+}
+
+@media (max-width: 560px) {
+    .TodosContainer {
+        width: 85%;
+    }
+}

@@ -1,0 +1,26 @@
+.InputFieldContainer {
+  width: 100%;
+  display: flex;
+  margin-top: -100px;
+  z-index: 1;
+}
+
+.InputFieldContainer input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px 0 0 5px;
+  font-size: 1rem;
+  outline: none;
+}
+
+.InputFieldContainer button {
+  padding: 10px 15px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  background: forestgreen;
+  color: white;
+  cursor: pointer;
+}
