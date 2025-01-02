@@ -9,6 +9,7 @@ import InputField from "./InputField";
 import Todos from "./Todos";
 import { useContext } from "react";
 import myContext from "../context/MyContext";
+import Footer from "./Footer";
 
 const Home = () => {
   const { changeTheme, trueTheme, theme } = useContext(myContext);
@@ -62,6 +63,9 @@ const Home = () => {
       </div>
       <div>
         <Todos />
+      </div>
+      <div>
+        <Footer />
       </div>
     </div>
   );
